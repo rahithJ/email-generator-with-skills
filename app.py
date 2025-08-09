@@ -9,7 +9,7 @@ st.set_page_config(page_title='Email Generator',layout='centered',page_icon=':MA
 st.title("Email Generator based on the given skills to employer")
 
 # os.environ['GROQ_API_KEY']=os.getenv('GROQ_API_KEY')
-st.secrets['GROQ_API_KEY']
+os.environ['GROQ_API_KEY'] = st.secrets['GROQ_API_KEY']
 st.text('Enter your skill and name(optional) we will cerate your MAIL for the same')
 
 st.text('Skill:')
